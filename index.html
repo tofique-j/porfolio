@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Model Viewer Test</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: #ffffff;
+    }
+    model-viewer {
+      width: 100%;
+      height: 100vh;
+      background: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <model-viewer
+    src="./196151_Einzelsofa-Luzern_web_V5.glb"
+   camera-controls
+
+  auto-rotate
+  auto-rotate-delay="0"
+  rotation-per-second="10deg"
+    interaction-prompt="none"
+    environment-image="neutral"
+    exposure="1"
+    shadow-intensity="1"
+    camera-orbit="45deg 75deg 3m"
+    field-of-view="30deg">
+  </model-viewer>
+</body>
+</html>
